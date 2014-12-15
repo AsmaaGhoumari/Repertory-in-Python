@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiAddContactForm</class>
+ <widget class="QDialog" name="uiAddContactForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>305</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Nouveau contact</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>14</y>
+     <width>281</width>
+     <height>306</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="name"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="firstname"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="mail"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Code postal :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Nom :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Email : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Prénom : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>Amis</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Famille</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Collègues</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Connaissances</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Autres</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Telephone :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="phone"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Goupe :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="1">
+     <widget class="QDialogButtonBox" name="buttonBox">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Ville :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="zip"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Adresse : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="address"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="city"/>
+    </item>
+    <item row="11" column="1">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>update</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>uiAddContactForm</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>uiAddContactForm</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
